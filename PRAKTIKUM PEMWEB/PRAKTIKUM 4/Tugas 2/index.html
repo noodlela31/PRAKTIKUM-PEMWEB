@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINGGU 4 - 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Mila - Foto.jpg" alt="Ferdy" />
+      <div class="profile">
+        <h1>MILA OKTAVIANI</h1>
+        <p>Tanjung Bintang, Lampung Selatan, 35361 |  +62 896 7608 9628</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang Saya</a></li>
+        <li><a href="#pengalaman">Pengalaman Organisasi dan Kegiatan</a></li>
+        <li><a href="#hubungi">Hubungi Saya</a></li>
+      </ul>
+    </nav>
+
+    <section class="about">
+      <div class="desc" id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya Mila Oktaviani, Mahasiswa S1 Teknik Informatika Institut Teknologi Sumatera tahun 2022. Aktivitas saya saat ini aktif sebagai mahasiswa Teknik Informatika dan mengikuti organisasi serta kegiatan kampus. Saya memiliki minat berkarir di dunia teknologi sebagai seorang programmer dan pengembang teknologi serta dunia public speaking dengan kemampuan public speaking saya saat ini.
+        </p>
+      </div>
+
+      <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JOHHgxEz6yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figcaption>MARS ITERA</figcaption>
+      </figure>
+    </section>
+
+    <section id="pengalaman">
+      <h2 class="heading-style">Pengalaman Organisasi dan Kegiatan</h2>
+      <table>
+        <tr>
+          <th rowspan="2">No</th>
+          <th rowspan="2">Organisasi/Kegiatan</th>
+          <th rowspan="2">Jabatan</th>
+          <th colspan="2">Waktu</th>
+        </tr>
+        <tr>
+          <th>Mulai</th>
+          <th>Selesai</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Paskibra Lampung</td>
+          <td>Wakil Ketua Manajemen</td>
+          <td>2018</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Cakra 5</td>
+          <td>Hubungan Masyarakat</td>
+          <td>2018</td>
+          <td>2019</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="hubungi">
+      <h2 class="heading-style">Hubungi Saya</h2>
+      <form action="">
+        <label for="nama">Nama Depan :</label>
+        <input type="text" id="nama" class="form-control" />
+        <label for="nama">Nama Belakang :</label>
+        <input type="text" id="nama" class="form-control" />
+
+        <p>Sudah follow media sosial saya :</p>
+        <label><input type="radio" name="watched" id="sudah" value="sudah" class="input-radio" />Sudah</label>
+        <label><input type="radio" name="watched" id="belum" value="belum" class="input-radio" />Belum</label>
+
+        <p>Mendapatkan info tentang saya dari :</p>
+        <label><input type="checkbox" name="pilihan1" id="pilihan1" value="Instagram" class="input-checkbox" />Teman/Kerabat</label>
+        <label><input type="checkbox" name="pilihan2" id="pilihan2" value="Facebook" class="input-checkbox" />Social Media</label>
+        <label><input type="checkbox" name="pilihan3" id="pilihan3" value="Other" class="input-checkbox" />Other</label>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <center>
+      <p>Tema (Gelap/Terang)!</p>
+      <label for="theme">Pilih Tema :</label>
+      <button id="light" onclick="light()">Terang</button>
+      <button id="dark" onclick="dark()">Gelap</button>
+    </center>
+
+    <footer>
+      <p>&#169; 2022, Mila Oktaviani</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
